@@ -13,8 +13,11 @@ searchButton.addEventListener("click", () => {
         fetch(`https://api.giphy.com/v1/gifs/search?api_key=8baFLtxeU8p85Z1f0uncxZgb8KmpNq7s&q=${inputText}`)
             .then(response => response.json())
             .then(giphyData => {
+                console.log(giphyData);
                 for (let i = 0; i < Math.min(numberOfImages, giphyData.data.length); i++) {
                     const img = document.createElement("img")
+                    img.setAttribute("height", 200)
+                    img.setAttribute("width", 200)
                     giphyData.data.sort(() => {return 0.5 - Math.random()})
                     img.src = giphyData.data[1].images.original.url
                     outputField.appendChild(img)
