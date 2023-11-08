@@ -1,32 +1,55 @@
+/*Global styles to set background and text color*/
 * {
     margin: 0;
     background-color: lightseagreen;
     color: whitesmoke;
 }
+
+/*H1 in center of screen*/
 h1 {
     text-align: center;
     font-family: cursive;
     font-size: 50px;
 }
 
+/*Putting input fields and buttons in a flexbox to manage display and position*/
 .input-and-buttons {
     text-align: center;
     display: flex;
     justify-content: center;
 }
 
+/*Change the background color of the search button when hovered*/
 #search-button:hover {
     background-color: darkturquoise;
 }
 
+/*Making all GIF's appear in the center of the screen*/
 .output {
     text-align: center;
     margin: 30px;
 }
 
+/*Making space between GIF's, adding curved edges and a box shadow underneath*/
 img {
     padding: 10px;
     margin: 20px;
     border-radius: 25px;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Media tag to accommodate mobile usage*/
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .input-and-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #search-button {
+        margin-top: 10px;
+    }
 }
