@@ -1,6 +1,7 @@
 * {
-    margin: 0px;
-    background-color: whitesmoke;
+    margin: 0;
+    background-color: lightseagreen;
+    color: whitesmoke;
 }
 h1 {
     text-align: center;
@@ -14,7 +15,18 @@ h1 {
     justify-content: center;
 }
 
+#search-button:hover {
+    background-color: darkturquoise;
+}
+
 .output {
     text-align: center;
-    margin-top: 30px;
+    margin: 30px;
+}
+
+img {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
 }
